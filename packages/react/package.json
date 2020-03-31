@@ -1,6 +1,6 @@
 {
-  "name": "@storefront-ui/cxa-react",
-  "version": "0.0.1",
+  "name": "@ngan/storefront-react",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {

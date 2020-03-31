@@ -3,7 +3,7 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: path.resolve(__dirname, 'index.js'),
-  externals: [nodeExternals()],
+  // externals: [nodeExternals()],
   module: {
     rules: [
       {
@@ -15,14 +15,20 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
+        // exclude: /node_modules/,
         use: [
-          // Creates `style` nodes from JS strings
           'style-loader',
-          // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
+         // 'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: [path.resolve(__dirname, 'react/src/components'), path.resolve(__dirname, 'shared')],
+              },
+            },
+          },
         ],
       },
     ],

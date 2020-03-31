@@ -53,5 +53,9 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3"
+  },
+  "gitHead": "3d54bef5a9497697128237a024b5203014387c0c",
+  "publishConfig": {
+    "access": "public"
   }
 }

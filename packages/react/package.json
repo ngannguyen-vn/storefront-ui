@@ -1,6 +1,6 @@
 {
   "name": "@storefront-ui/cxa-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -54,7 +54,6 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3"
   },
-  "gitHead": "e80016e29b3c61d56d1325eb51e45f76e90a56ee",
   "publishConfig": {
     "access": "public"
   }

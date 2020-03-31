@@ -2,12 +2,13 @@
   "name": "storefront-ui-react",
   "version": "0.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
-    "plop": "plop"
+    "plop": "plop",
+    "build": "./node_modules/.bin/webpack --mode=production"
   },
   "author": "Aexol <aexol@aexol.com> (http://aexol.com)",
   "license": "MIT",
@@ -27,6 +28,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "@storybook/addon-a11y": "^5.1.11",
     "@storybook/addon-actions": "^5.1.11",
     "@storybook/addon-backgrounds": "^5.1.11",
@@ -52,7 +55,9 @@
     "react-hot-loader": "^4.12.12",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.3"
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
   },
   "publishConfig": {
     "access": "public"

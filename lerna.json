@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/react"
+    "packages/react/dist"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
